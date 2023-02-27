@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: 'Press Start 2P', cursive;
+      scroll-behavior: smooth;
+    }
+  }
+
+
+  /* Custom Css */
+
+    /* subheading */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .animate-blink {
+    animation: blink 2s infinite;
+  }
+
+    /* arrow */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .arrow-bounce {
+    animation: bounce 1s infinite;
+  }
+
+    /* Sattelite */
+
+  @keyframes bounceSide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .satellite-bounceSide {
+    animation: bounceSide 1s infinite;
+  }
+
+  /* Airplane */
+
+  @keyframes push {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(calc(1600%));
+    }
+  }
+  
+  
+  .push-animation {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    animation: push 30s linear forwards infinite;
+  }
+
+
+  /* Helicopter */
+
+  @keyframes pushleft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(calc(-2100%));
+    }
+  }
+  
+  
+  .fly-animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: pushleft 30s linear forwards infinite;
+  }
