@@ -354,7 +354,7 @@ class HomePage extends React.Component {
                                         <p className="text-[0.7rem] font-semibold text-gray-500" >Manila, Philippines</p>
                                         <div className="group relative">
                                             <div className="flex items-center gap-x-4 text-xs">
-                                                <p className="text-gray-500">Oct 2022 - Present</p>
+                                                <p className="text-gray-500">June 2022 - Present</p>
                                             </div>
                                             <p className="mt-5 text-xs md:text-sm lg:text-sm leading-6 text-gray-500 line-clamp-3">Freelance WebDev and Graphic Designer</p>
                                         </div>
